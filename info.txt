@@ -1,0 +1,5 @@
+INFO:
+press Mouse button 5 to create new on the title screen.
+press Mouse button 4 to exit a world.
+The "xmouse" folder is for x-mouse button control, a random app I found. 
+The "ahk" folder is for autohotkey scripts.
