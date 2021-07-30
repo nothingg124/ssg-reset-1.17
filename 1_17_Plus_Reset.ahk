@@ -1,4 +1,4 @@
-﻿#NoEnv  
+#NoEnv  
 #Warn
 SendMode Input
 SetWorkingDir %A_ScriptDir% 
@@ -121,6 +121,20 @@ NameWorld() {
 	DifficultySet()
 }
 
+ExitWorld() {
+
+	Send {Esc}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Tab}
+	Send {Enter}
+}
+
 NewWorldMenu() {
 
 	TabAndWait()
@@ -137,4 +151,10 @@ PgUp::
 		
 		Singleplayer()	
 		
+	}
+PgDn:: 
+	if WinActive("Minecraft* 1.17.1") {
+	
+		ExitWorld()
+	
 	}
